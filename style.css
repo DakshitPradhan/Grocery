@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    min-height: 100vh;
+    }
+
+.container{
+    position: relative;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+  .container .box{
+
+    position: relative;
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 15px 15px 15px rgba(0,0,0);
+    border: 3px solid black;
+    border-radius: 3px;
+    }
+
+ .container .box   h1{
+    position: relative;
+    font-size: 1.74rem;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.container .box #grocery
+{
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+.container .box #grocery input{
+    position: relative;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    outline: none;
+
+}
+
+.container .box #grocery button{
+    background-color: green;
+    min-width: 50px;
+    font-weight: 500;
+    min-height: 27px;
+    border: 2px solid #333;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.container ol{
+    position: relative;
+    margin-top: 25px;
+    padding: 10px 20px 10px 40px;
+    width: 95%;
+    min-height: 395px;
+    background: #fff repeating-linear-gradient(transparent 0%,transparent 95%, #000 100%);
+    background-size: 27px 27px;
+    box-shadow: 15px 15px 15px rgba(0,0,0.1);
+}
+
+.vk {
+    border: 3px solid black;
+     border-radius: 3px;
+
+}
+
+.container ol li {
+    position: relative;
+    
+    height: 28px;
+}
+
+
+
+
+
+

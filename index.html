@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+    
+  
+    <div class="box">
+        <h1>Grocery list</h1>
+
+        <form id="grocery">
+            <input type="text" id="writeList" name="username" placeholder="Enter Grocery item..." required>
+            <button class="button" onclick="additem()">Add Item</button>
+        </form>
+    </div>
+    
+    <ol class="vk">
+        
+    </ol>
+   </div> 
+
+   <script>
+    let grocery = document.getElementById('grocery');
+    grocery.addEventListener('submit', additem);
+  
+    function additem(e){
+      e.preventDefault();
+      let data = this.elements.writeList.value;
+      let list = document.querySelector('ol');
+      let item = document.createElement('li');
+      let text = document.createElement('h');
+  
+      text.textContent = data;
+      this.elements.writeList.value = "";
+      item.append(text);
+      list.append(item);
+    }
+
+    item.style.marginTop = '10px';
+  </script>
+</body>
+</html>

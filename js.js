@@ -12,7 +12,24 @@ let grocery = document.getElementById('grocery');
       this.elememts.writeList.value = "";
       item.append(text);
       list.append(item);
-  
+
+     let rmvBtn = document.createElement('span');
+     rmvBtn.classList.add('remove');
+     item.append(rmvBtn);
+     rmvBtn.addEventListener('click', deleteItem);
+     item.addEventListener('click' , doneItem);
+
       
     }
+
+    function deleteItem(e){
+      this.parentElement.remove();
+    }
+
+    function doneItem(e){
+
+      this.classList.toggle('done');
+
+    }
+
   

@@ -17,7 +17,7 @@ let grocery = document.getElementById('grocery');
      rmvBtn.classList.add('remove');
      item.append(rmvBtn);
      rmvBtn.addEventListener('click', deleteItem);
-     item.addEventListener('click' , doneItem);
+     
 
       
     }
@@ -26,7 +26,7 @@ let grocery = document.getElementById('grocery');
       this.parentElement.remove();
     }
 
-    function doneItem(e){
+    
 
       this.classList.toggle('done');
 

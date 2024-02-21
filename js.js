@@ -28,8 +28,8 @@ let grocery = document.getElementById('grocery');
 
     
 
-      this.classList.toggle('done');
+      
 
-    }
+    
 
   
